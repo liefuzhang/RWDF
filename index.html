@@ -200,12 +200,7 @@
 
   <script>
     function onBurgerClick() {
-      var classList = document.getElementsByClassName('nav__list').item(0).classList;
-      if (classList.contains("active")) {
-        classList.remove("active");
-      } else {
-        classList.add("active");
-      }
+      var classList = document.getElementsByClassName('nav__list').item(0).classList.toggle("active");
     }
   </script>
 
